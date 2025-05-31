@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPSC Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>UPSC General Studies Quiz</h1>
+            <h1>this quiz will be updated weekly thrice ! so that you'll stay motivated</h1>
+            <div class="quiz-info">
+                <span id="question-counter">Question 1/X</span>
+                <span id="timer">Time: 00:30</span>
+                <span id="score">Score: 0</span>
+            </div>
+        </header>
+
+        <main id="quiz-area">
+            <div id="question-section">
+                <h2 id="question-text">Question text will load here...</h2>
+                <div id="options-container">
+                    </div>
+            </div>
+
+            <div id="feedback-section" class="feedback"></div>
+
+            <button id="next-btn">Next Question</button>
+        </main>
+
+        <div id="results-screen" class="hidden">
+            <h2>Quiz Completed!</h2>
+            <p>Your Final Score: <span id="final-score">0</span></p>
+            <p>Total Questions: <span id="total-questions-summary">0</span></p>
+            <p>Correct Answers: <span id="correct-answers-summary">0</span></p>
+            <p>Incorrect Answers: <span id="incorrect-answers-summary">0</span></p>
+            <button id="restart-btn">Restart Quiz</button>
+            <button id="review-btn">Review Answers</button>
+        </div>
+
+        <div id="review-section" class="hidden">
+            <h2>Review Your Answers</h2>
+            <div id="review-content"></div>
+            <button id="back-to-results-btn">Back to Results</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
